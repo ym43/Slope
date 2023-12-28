@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+}
+body {
+    background: linear-gradient(130deg, rgb(92, 91, 91), rgb(231, 231, 231)) fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:max-content;
+    height: max-content;
+    overflow: hidden;
+}
+
+center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+}
+hr {
+    width: 100vw;
+}
+
+h1:nth-child(1){
+    margin: 20px 0px;
+    color: blue;
+    font-family: cursive;
+    font-size: 50px;
+    transition: 1s;
+}
+
+h1:not(#h1){
+    font-size:40px;
+    color: green;
+    margin: 20px 0px;
+    transition: 1s;
+}
+
+label{
+    font-size:40px;
+    color: green;
+    margin: 20px 0px;
+    font-weight: 900;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: 1s;
+    cursor: pointer;
+}
+
+input {
+    font-size: 30px;
+    border: 2px solid green;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+sup{
+    font-size: 15px;
+    cursor: pointer;
+}
+button {
+    border-radius: 10px;
+    border: 5px solid green;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    color: green;
+    background: none;
+}
+@media screen and (max-width:540px){
+    * {
+        font-size: 15px;
+    }
+    input{
+        width: 60px;
+        overflow: hidden;
+    }
+}
